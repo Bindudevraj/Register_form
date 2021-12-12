@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="registration_form">
+            <div class="title">
+                Registration Form
+            </div>
+
+            <form>
+                <div class="form_wrap">
+                    <div class="input_grp">
+                        <div class="input_wrap">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" required>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname">
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" required>
+                    </div>
+                    <div class="input_grp">
+                        <div class="input_wrap">
+                            <label>Gender</label>
+                            <ul>
+                                <li>
+                                    <label class="radio_wrap">
+                                        <input type="radio" name="gender" value="male" class="input_radio" checked>
+                                        <span>Male</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio_wrap">
+                                        <input type="radio" name="gender" value="female" class="input_radio">
+                                        <span>Female</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="input_wrap">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required title="Please enter in the required format of 0000-000-000">
+                        </div>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="address">Address</label>
+                        <textarea type="text" id="address" required></textarea>
+                    </div>
+                    <div class="input_wrap">
+                        <select name="degree" required>
+                            <option selected disabled>Select degree</option>
+                            <optgroup label="Bachelors">
+                                <option>B. Tech</option>
+                                <option>B.E.</option>
+                                <option>B. Sc.</option>
+                            </optgroup>
+                            <optgroup label="Masters">
+                                <option>M. Tech</option>
+                                <option>M.E.</option>
+                                <option>M. Sc.</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="college">Graduation College</label>
+                        <input type="text" name="college" required/>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="year">Year of graduation</label>
+                        <input type="text" name="graduation_year" min="2010" max="2022" required/>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="percentage">Percentage</label>
+                        <input type="text" name="percentage" min="0" max="100" step="0.1" required/>
+                    </div>
+                    <div class="input_wrap">
+                        <label for="resume">Upload Resume</label>
+                        <input type="file" required/>
+                    </div>
+                    <div class="input_wrap">
+                        <input type="submit" value="Register" class="submit_btn">
+                    </div>
+                    <div class="input_wrap">
+                        <input type="reset" value="Reset" class="reset_btn">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
